@@ -4,12 +4,18 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Listerbladet</title>
 	<style>
-		html { 
-			background: url(images/listerbladet.jpg) no-repeat center center fixed; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
+		@font-face {
+		    font-family: "NewRudeSlabCondensed-ExtraBold";
+		    src: url("NewRudeSlabCondensed-ExtraBold.woff") format('woff');
+		}
+		h1,h2,h3 {
+			font-family: "NewRudeSlabCondensed-ExtraBold";
+		}
+		nav {
+			list-style-type: none;
+		}
+		nav li {
+			display: inline;
 		}
 	</style>
 	<script>
@@ -23,5 +29,27 @@
 </head>
 <body>
 	
+	<header>
+		<h1>LISTERBLADET</h1>
+		<nav>
+			<li><a href="">Hem</a></li>
+			<li><a href="">Nyheter</a></li>
+		</nav>
+	</header>
+
+	<article>
+		<header>
+			<h2>Rubrik</h2>
+			<h3>Ingress</h3>
+		</header>
+		<section>
+			<p>Brödtext.</p>
+		</section>
+	</article>
+
+	<footer>
+		<h3>Est. 1877</h3>
+	</footer>
+
 </body>
 </html>
